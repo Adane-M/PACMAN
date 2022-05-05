@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="init()" onkeyup="movePacman(event)">
+    <h1>PAC-MAN - ARCADE <br> Score: <span id="score">0</span></h1>
+    <div class="board-container">
+
+    </div>
+
+    <div class="modal">
+        <h2> GAME OVER </h2>
+        <h3>You Scored: <span class="ttlscore">0</span> points</h3>
+        <h3>Try Again?</h3>
+        <div><button class="playAgain" onclick="newGame(this)">YES</button></div>
+    </div>
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
