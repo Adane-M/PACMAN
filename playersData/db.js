@@ -13,11 +13,11 @@ const db = knex({
 
 function createUser(user) {
   return db('users')
-  .insert({user_name:user.user_name,})
+  .insert({user_name:user.user_name})
     .returning('*')
 }
 
-function updateScore(user_name , score ) {
+function updateScore(user_name , score) {
   return db('users')
     .update('score', score)
     .where({ user_name: user_name })
